@@ -1,0 +1,43 @@
+:root {
+    --background-image: url("/assets/pastel stars bg.gif"); 
+    --font-family: 'Candara', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-image);
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.container {
+    background-color: aliceblue;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+div {
+    padding: 1rem;
+}
+
+.locals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.villager {
+    width: 200px;
+    padding: 1rem;
+}
+
+.villager img {
+    width: 50%;
+}

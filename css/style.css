@@ -1,0 +1,280 @@
+:root {
+    --background-image: url("/assets/genshin.png");
+    --white-color: #f9fafb;
+    --black-color: #080808;
+    --font-family: 'MS Gothic', sans-serif;
+    --header-font: 'NSimSun', monospace;
+    --font-size: 13px;
+    --border-size: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background: var(--background-image) no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(43, 86, 87);
+    background-blend-mode: multiply;
+    width: 100vw;
+    height: 100vh;
+    color: var(--white-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+}
+
+.container {
+    display: flex;
+    width: 75%;
+    height: 70%;
+    margin: auto;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 15%;
+    max-width: 150px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+main {
+    overflow: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font);
+}
+
+a {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+/*** NAV BAR STYLING ***/
+.mascot {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mascot img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.nav li {
+    border: var(--border-size) double var(--white-color);
+    color: var(--white-color);
+    margin: .3rem;
+    padding: .3rem;
+}
+
+.nav li:hover {
+    cursor: pointer;
+    letter-spacing: 3pt;
+    transition: 0.5s;
+}
+
+.nav a {
+    text-decoration: none;
+}
+/*** END NAV STUFF ***/
+
+.disclaimer {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.guardians {
+    margin: 1rem auto;
+}
+
+.guardian img {
+    display: block;
+    margin: 1rem auto;
+}
+
+.blinkies {
+    margin: 1rem 0;
+}
+
+.blinkies img {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.link-me {
+    text-align: center;
+}
+
+/*** STATUS CAFE ***/
+#statuscafe,
+.link-me {
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    width: calc(100% - 50% - 1rem);
+    padding: 1rem;
+    border: var(--border-size) double var(--white-color);
+}
+
+#statuscafe-username {
+    font-size: smaller;
+}
+
+#statuscafe-content {
+    padding-top: 0.5rem;
+}
+
+/*** DEVLOG STYLING ***/
+.devlog {
+    float: right;
+    width: 50%;
+    height: 250px;
+    overflow-y: auto;
+    border: var(--border-size) double var(--white-color);
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.devlog p {
+    border-top: 1px solid;
+    padding: 10px 0px;
+}
+
+/*** ABOUT PAGE ***/
+.id-card {
+    display: flex;
+    width: 475px;
+    height: 200px;
+    gap: 1rem;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+
+.id-card,
+.current-status {
+    border: var(--border-size) double var(--white-color);
+    padding: 1rem;
+}
+
+figure img {
+    width: 150px;
+    height: 150px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: smaller;
+}
+
+.biodata {
+    align-content: center;
+}
+
+.col1 {
+    width: 40%;
+    max-width: 400px;
+    height: 100%;
+}
+
+.current-status {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+sub {
+    float: right;
+}
+
+.stamps {
+    width: 100%;
+}
+
+.stamps img {
+    height: 56px;
+    width: 99px;
+}
+
+.bookshelf img {
+    width: 100px;
+    height: 150px;
+}
+
+.abtText,
+.bookshelf {
+    margin-top: 1rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+}
+
+/*** GO HOME STYLING ***/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tttext {
+    visibility: hidden;
+    width: 120px;
+    color: var(--white-color);
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip:hover .tttext {
+    visibility: visible;
+    opacity: 1;
+}

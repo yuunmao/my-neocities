@@ -1,0 +1,52 @@
+:root {
+    --white-color: #f9fafb;
+    --black-color: #080808;
+    --font-family: 'MS Gothic', sans-serif;
+    --header-font: 'NSimSun', monospace;
+    --font-size: 13px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    color: var(--white-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    margin: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--header-font);
+    padding-bottom: 1rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 40%;
+}
+
+.caption {
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: smaller;
+}
+
+li {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
