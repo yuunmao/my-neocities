@@ -70,6 +70,10 @@ a {
     text-decoration: underline;
 }
 
+a:hover {
+    font-style: italic;
+}
+
 img:hover {
     transform: scale(1.1);
 }
