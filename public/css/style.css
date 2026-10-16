@@ -245,15 +245,6 @@ sub {
     margin-top: 1rem;
 }
 
-/*** SITEMAP STYLING ***/
-.map a {
-    text-decoration: none;
-}
-
-.map a:hover {
-    text-decoration: underline;
-}
-
 /*** GO HOME STYLING ***/
 footer {
     position: fixed;
