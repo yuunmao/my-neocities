@@ -245,6 +245,16 @@ sub {
     margin-top: 1rem;
 }
 
+/*** SITEMAP STYLING ***/
+.map a {
+    text-decoration: none;
+}
+
+.map a:hover {
+    text-decoration: underline;
+}
+
+/*** GO HOME STYLING ***/
 footer {
     position: fixed;
     bottom: 0;
@@ -253,7 +263,6 @@ footer {
     text-align: center;
 }
 
-/*** GO HOME STYLING ***/
 .tooltip {
     position: relative;
     display: inline-block;
