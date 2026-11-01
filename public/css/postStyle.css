@@ -37,13 +37,27 @@ p {
 img {
     display: block;
     margin: 0 auto;
-    max-width: 40%;
+    max-height: 200px;
 }
 
-.caption {
-    font-family: var(--font-family);
+figure {
+    display: block;
+    margin: 0 auto;
+}
+
+div {
+    text-align: center;
+}
+
+div img {
+    display: inline-block;
+}
+
+figcaption {
     text-align: center;
     font-size: smaller;
+    padding-top: 2px;
+    padding-bottom: 1rem;
 }
 
 li {
