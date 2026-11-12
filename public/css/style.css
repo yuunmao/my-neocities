@@ -31,6 +31,7 @@ body {
 .container {
     display: flex;
     width: 75%;
+    max-width: 1000px;
     height: 70%;
     margin: auto;
     gap: 2rem;
@@ -68,10 +69,6 @@ h6 {
 a {
     color: var(--white-color);
     text-decoration: underline;
-}
-
-a:hover {
-    font-style: italic;
 }
 
 img:hover {
@@ -113,6 +110,7 @@ img:hover {
 .nav a {
     text-decoration: none;
 }
+
 /*** END NAV STUFF ***/
 
 .disclaimer {
@@ -247,6 +245,23 @@ sub {
 .abtText,
 .bookshelf {
     margin-top: 1rem;
+}
+
+/*** SITEMAP STYLING ***/
+.mapbox {
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.mapbox a:hover {
+    font-style: italic;
+}
+
+.mapTitle {
+    text-align: center;
 }
 
 /*** GO HOME STYLING ***/
