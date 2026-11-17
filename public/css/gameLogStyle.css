@@ -70,6 +70,10 @@ main {
     margin-right: 1rem;
 }
 
+sup {
+    float: right;
+}
+
 .gameList {
     height: 100%;
     width: 30%;
